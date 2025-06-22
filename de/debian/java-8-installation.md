@@ -9,13 +9,21 @@ apt update && apt upgrade -y
 Java 8 installieren
 ``` bash
 mkdir -p /etc/apt/keyrings
+```
 
+``` bash
 wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /etc/apt/keyrings/adoptium.asc
+```
 
+``` bash
 echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+```
 
+``` bash
 apt update
+```
 
+``` bash
 apt install temurin-8-jdk
 ```
 
