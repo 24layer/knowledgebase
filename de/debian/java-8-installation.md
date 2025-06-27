@@ -33,4 +33,3 @@ java -version
 ```
 
 © 24layer - Die Weiterveröffentlichung dieser Anleitung auf externen Webseiten ist nicht erlaubt.
-
