@@ -1,17 +1,19 @@
 ## Sie möchten die Zeitzone Ihres Servers anpassen?
 
 
-Auflistung aller Zeitzonen
+Alle verfügbaren Zeitzonen auflisten
 ``` bash
 timedatectl list-timezones
 ```
 
 Zeitzone setzen
+
+*Ersetzen Sie ZEITZONE durch Ihre gewünschte Zeitzone, z. B. Europe/Berlin*
 ``` bash
 timedatectl set-timezone ZEITZONE
 ```
 
-Überprüfung der Zeitzone
+Aktuelle Zeitzone überprüfen
 ``` bash
 timedatectl
 ```

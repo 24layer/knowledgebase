@@ -1,22 +1,22 @@
-## Sie möchten einen TeamSpeak³ Server auf Ihren Server installieren?
+## Do You Want to Install a TeamSpeak³ Server on Your Server?
 
 
-Server-Paketliste aktualisieren
+Update the Server Package List
 ``` bash
 apt update && apt upgrade -y
 ```
 
-TeamSpeak-Verzeichnis erstellen
+Create a Directory for TeamSpeak
 ``` bash
 mkdir /home/teamspeak
 ```
 
-In das Verzeichnis wechseln
+Change into the Directory
 ``` bash
 cd /home/teamspeak
 ```
 
-TeamSpeak³-Server installieren
+Install the TeamSpeak³ Server
 ``` bash
 apt install bzip2 -y
 ```
@@ -34,7 +34,7 @@ rm teamspeak3-server_linux_amd64-3.13.7.tar.bz2
 cd teamspeak3-server_linux_amd64
 ```
 
-TeamSpeak³-Server starten
+Start the TeamSpeak³ Server
 ``` bash
 touch .ts3server_license_accepted
 ```
@@ -43,4 +43,4 @@ touch .ts3server_license_accepted
 ./ts3server_startscript.sh
 ```
 
-© 24layer - Die Weiterveröffentlichung dieser Anleitung auf externen Webseiten ist nicht erlaubt.
+© 24layer – Republishing this guide on external websites is not permitted.

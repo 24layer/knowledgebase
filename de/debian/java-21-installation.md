@@ -1,7 +1,7 @@
 ## Sie möchten Java 21 auf Ihren Server installieren?
 
 
-Server Paketliste aktualisieren
+Server-Paketliste aktualisieren
 ``` bash
 apt update && apt upgrade -y
 ```

@@ -1,12 +1,12 @@
-## Sie möchten Java 8 auf Ihren Server installieren?
+## Do You Want to Install Java 8 on Your Server?
 
 
-Server-Paketliste aktualisieren
+Update the Server Package List
 ``` bash
 apt update && apt upgrade -y
 ```
 
-Java 8 installieren
+Install Java 8
 ``` bash
 mkdir -p /etc/apt/keyrings
 ```
@@ -27,9 +27,9 @@ apt update
 apt install temurin-8-jdk
 ```
 
-Überprüfung der Java-Version
+Verify the Java Installation
 ``` bash
 java -version
 ```
 
-© 24layer - Die Weiterveröffentlichung dieser Anleitung auf externen Webseiten ist nicht erlaubt.
+© 24layer – Republishing this guide on external websites is not permitted.

@@ -1,12 +1,12 @@
-## Sie möchten MariaDB (MySQL) auf Ihren Server installieren?
+## Do You Want to Install MariaDB (MySQL) on Your Server?
 
 
-Server-Paketliste aktualisieren
+Update the Server Package List
 ``` bash
 apt update && apt upgrade -y
 ```
 
-MariaDB und benötigte Pakete installieren
+Install MariaDB and Required Packages
 ``` bash
 apt install ca-certificates apt-transport-https lsb-release gnupg curl nano unzip -y
 ```
@@ -39,7 +39,7 @@ apt install mariadb-server mariadb-client -y
 mysql_secure_installation
 ```
 
-phpMyAdmin installieren
+Install phpMyAdmin
 ``` bash
 cd /usr/share
 ```
@@ -64,11 +64,11 @@ mv phpMyAdmin-*-all-languages phpmyadmin
 chmod -R 0755 phpmyadmin
 ```
 
-Apache für phpMyAdmin konfigurieren
+Configure Apache for phpMyAdmin
 ``` bash
 nano /etc/apache2/conf-available/phpmyadmin.conf
 ```
-*!! Fügen Sie die folgende Konfiguration ein !!*
+*!! Paste the following configuration !!*
 
 ``` bash
 # phpMyAdmin Apache configuration
@@ -92,7 +92,7 @@ Alias /phpmyadmin /usr/share/phpmyadmin
 </Directory>
 ```
 
-Konfiguration aktivieren
+Activating the configuration
 ``` bash
 a2enconf phpmyadmin
 ```
@@ -101,7 +101,7 @@ a2enconf phpmyadmin
 systemctl reload apache2
 ```
 
-Temporäres Verzeichnis für phpMyAdmin erstellen
+Create Temporary Directory for phpMyAdmin
 ``` bash
 mkdir /usr/share/phpmyadmin/tmp/
 ```
@@ -110,7 +110,7 @@ mkdir /usr/share/phpmyadmin/tmp/
 chown -R www-data:www-data /usr/share/phpmyadmin/tmp/
 ```
 
-*(Optional) Einen zusätzlichen Benutzer erstellen*
+*(Optional) Create an Additional user*
 ``` bash
 mysql -u root
 ```
@@ -127,4 +127,4 @@ GRANT ALL PRIVILEGES ON *. * TO 'username'@'localhost' WITH GRANT OPTION
 exit
 ```
 
-© 24layer - Die Weiterveröffentlichung dieser Anleitung auf externen Webseiten ist nicht erlaubt.
+© 24layer – Republishing this guide on external websites is not permitted.
